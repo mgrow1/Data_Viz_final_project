@@ -9,23 +9,20 @@ library(leaflet)
 
 ##### load data files
 # load the census shape file
-census <- st_read("C:/Users/micha/OneDrive/Documents/Data Viz/Github Data Sets/FinalProject/2010_CensusData/2010_CensusData.shp")
+census <- st_read("2010_CensusData/2010_CensusData.shp")
 
 # load the abandoned properties shape file
-abandon_prop <- st_read("C:/Users/micha/OneDrive/Documents/Data Viz/Github Data Sets/FinalProject/Abandoned_Property_Parcels/Abandoned_Property_Parcels.shp")
+abandon_prop <- st_read("Abandoned_Property_Parcels/Abandoned_Property_Parcels.shp")
 
 # load the school boundaries shape file
-school <- st_read("C:/Users/micha/OneDrive/Documents/Data Viz/Github Data Sets/FinalProject/School_Boundaries/School_Boundaries.shp")
+school <- st_read("School_Boundaries/School_Boundaries.shp")
 
 # load the business licenses data (geocoded)
-business <-  read.csv("C:/Users/micha/OneDrive/Documents/Data Viz/Github Data Sets/FinalProject/Business_Licenses_geocoded.csv")
+business <-  read.csv("Business_Licenses_geocoded.csv")
 
 # load the parks data
-parks <-  read.csv("C:/Users/micha/OneDrive/Documents/Data Viz/Github Data Sets/FinalProject/Parks_Locations_and_Features.csv")
+parks <-  read.csv("Parks_Locations_and_Features.csv")
 summary(parks)
-
-# load the public facilities data
-facilities <-  read.csv("C:/Users/micha/OneDrive/Documents/Data Viz/Github Data Sets/FinalProject/Public_Facilities.csv")
 #####
 
 # convert the parks data to a spatial data frame
